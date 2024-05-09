@@ -2,6 +2,7 @@ import dbConnect from "@/app/connect/mongodb";
 import Votes from "@/app/modals/Votes";
 import { NextResponse } from "next/server";
 
+export const dynamic = "force-dynamic";
 export async function GET(request) {
   await dbConnect();
 
