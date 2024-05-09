@@ -18,21 +18,21 @@ export default function Home() {
       </div>
 
       <div className="flex justify-center gap-5 mt-5">
-        <Link href="#">
+        <Link href="tglink">
           <Image
             className="w-[50px] h-[50px] "
             src={telegram}
             alt="telegram icon"
           />
         </Link>
-        <Link href="#">
+        <Link href="ttlink">
           <Image
             className="w-[50px] h-[50px] "
             src={twitter}
             alt="twitter icon"
           />
         </Link>
-        <Link href="#">
+        <Link href="chartlink">
           <Image
             className="w-[50px] h-[50px] "
             src={dextool}
