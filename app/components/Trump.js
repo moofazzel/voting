@@ -1,6 +1,5 @@
 import { revalidateTag } from "next/cache";
 import Image from "next/image";
-import { toast } from "react-toastify";
 import trump from "../../public/trump.png";
 import dbConnect from "../connect/mongodb";
 import Votes from "../modals/Votes";
@@ -22,7 +21,6 @@ const Trump = async () => {
       // Save the updated document back to the database
       await existingVote.save();
       revalidateTag("votes");
-      const notify = () => toast("Wow so easy!");
     } else {
       // If no existing record is found, create a new one with the initial counts
       const newVote = await Votes.create({
