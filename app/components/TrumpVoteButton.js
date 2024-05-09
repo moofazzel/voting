@@ -5,7 +5,7 @@ const TrumpVoteButton = () => {
     <div className="flex justify-center mt-5">
       <button
         type="submit"
-        className="flex w-[300px] justify-center gap-2 items-center bg-blue-500 px-6 py-2.5 text-white font-semibold hover:bg-blue-600 group rounded-md"
+        className="flex w-[300px] justify-center gap-2 items-center bg-blue-500 px-6 py-2.5 text-white font-semibold hover:bg-blue-600 group rounded-md tracking-wider text-xl"
       >
         <span>Vote</span>
         <svg

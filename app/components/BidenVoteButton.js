@@ -3,7 +3,7 @@
 const BidenVoteButton = () => {
   return (
     <div className="flex justify-center mt-5">
-      <button className="flex gap-2 w-[300px] justify-center items-center bg-blue-500 px-6 py-2.5 text-white font-semibold hover:bg-blue-600 group rounded-md">
+      <button className="flex gap-2 w-[300px] justify-center items-center bg-blue-500 px-6 py-2.5 text-white font-semibold hover:bg-blue-600 group rounded-md tracking-wider text-xl">
         <span>Vote</span>
         <svg
           className="group-hover:-translate-y-[2px] transition-transform duration-300"
