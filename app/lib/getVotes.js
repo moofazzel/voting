@@ -1,8 +1,13 @@
-import dbConnect from "../connect/mongodb";
-import Votes from "../modals/Votes";
-
 export const getVotes = async () => {
-  await dbConnect();
-  const vote = await Votes.find({});
-  return vote;
+  const url = ` ${process.env.NEXT_PUBLIC_BASE_URL}/api/getVoteDetails`;
+  const res = await fetch(url, {
+    cache: "no-store",
+    next: { tags: ["votes"] },
+  });
+
+  if (!res.ok) {
+    throw new Error("Failed to fetch data");
+  }
+
+  return res.json();
 };

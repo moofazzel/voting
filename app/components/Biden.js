@@ -1,3 +1,4 @@
+import { revalidateTag } from "next/cache";
 import Image from "next/image";
 import biden from "../../public/biden.jpg";
 import dbConnect from "../connect/mongodb";
@@ -18,6 +19,7 @@ const Biden = async () => {
 
       // Save the updated document back to the database
       await existingVote.save();
+      revalidateTag("votes");
     } else {
       // If no existing record is found, create a new one with the initial counts
       const newVote = await Votes.create({
