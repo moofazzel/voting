@@ -43,7 +43,7 @@ const Trump = async () => {
         value={"John Doe"}
         readOnly
       />
-      <div className=" w-[300px] h-[300px] relative mx-auto">
+      <div className=" aspect-w-10 aspect-h-12 w-[130px] sm:w-auto relative mx-auto">
         <Image
           fill
           className="object-cover rounded-md"

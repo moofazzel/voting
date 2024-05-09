@@ -32,13 +32,8 @@ const Biden = async () => {
 
   return (
     <form action={addBidenVote}>
-      <div className=" w-[300px] h-[300px] relative mx-auto">
-        <Image
-          fill
-          className="object-cover rounded-md"
-          src={biden}
-          alt="biden"
-        />
+      <div className="w-[130px] sm:w-auto aspect-w-10 aspect-h-12 relative mx-auto ">
+        <Image className="object-cover rounded-md " src={biden} alt="biden" />
       </div>
       <BidenVoteButton />
     </form>
